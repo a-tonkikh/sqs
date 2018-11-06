@@ -1,0 +1,108 @@
+.form-ask {
+  background-color: rgba(225, 225, 225, 0.7);
+  border-radius: 2px;
+  color: #000;
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 650px;
+}
+
+.form-ask__list {
+  font-size: 16px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 500px;
+}
+
+.form-ask__item {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.form-ask__label {
+  margin: 0;
+  margin-right: 5px;
+  padding: 0;
+}
+
+.form-ask__input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #111;
+  color: #000;
+  margin: 0;
+  padding: 0 5px;
+  padding-bottom: 3px;
+  width: 390px;
+
+  &:active {
+    border-bottom: 1px solid @button-color;
+  }
+
+  &:hover {
+    border-color: #000;
+  }
+
+  &--comment {
+    border: 1px solid #111;
+    height: 130px;
+
+    &:active {
+      border: 1px solid @button-color;
+    }
+  }
+}
+
+.form-ask__button {
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.form-ask__input:-webkit-autofill,
+:-webkit-autofill:hover,
+.form-ask__input:-webkit-autofill:focus,
+.form-ask__input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+}
+
+@media (max-width: @mobile-width-max) {
+  .form-ask {
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .form-ask__list {
+    margin-bottom: 15px;
+    width: 300px;
+  }
+
+  .form-ask__item {
+    display: block;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-ask__label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .form-ask__input {
+    width: 290px;
+
+    &--comment {
+      height: 100px;
+    }
+  }
+}

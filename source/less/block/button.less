@@ -1,0 +1,22 @@
+.button {
+  background-color: @button-color;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    background-color: darken(@button-color, 10%);
+  }
+
+  &:active {
+    background-color: darken(@button-color, 10%);
+    color: rgba(225, 225, 225, 0.7);
+  }
+
+  &:focus {
+    background-color: darken(@button-color, 10%);
+  }
+}

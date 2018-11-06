@@ -1,0 +1,31 @@
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../img/bg.jpg");
+  background-attachment: fixed;
+  background-color: #111111;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  font-family: "Open Sans", "Arial", sans-serif;
+  min-width: 320px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+@media (max-width: @tablet-width-max) {
+  body {
+    background-image: url("../img/bg-tablet.jpg");
+  }
+}
+
+@media (max-width: @mobile-width-max) {
+  body {
+    background-image: url("../img/bg-mobile.jpg");
+  }
+}

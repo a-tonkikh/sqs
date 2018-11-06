@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>SquareShare</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="token, cryptocurrency, real estate, blockchain">
+  <meta name="description" content="Блокчейн платформа по торговле недвижимостью">
+  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async></script>
+  <script src="js/ofi.min.js"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="overlay object-fit__container object-fit__container--large">
+      <video class="overlay__video object-fit__cover" preload="auto" loop muted autoplay>
+        <source src="img/bg-video.webm" type="video/webm">
+        <source src="img/bg-h4.mp4" type="video/mp4">
+        <source src="img/bg-video.mp4" type="video/mp4">
+      </video>
+    </div>
+    <header class="page-header">
+      <nav class="main-nav main-nav--closed" id="menu">
+        <div class="main-nav__wrap">
+          <div class="main-nav__top">
+            <a class="main-nav__logo">
+              <img class="main-nav__logo-img" src="img/logo.png" width="59" height="51" alt="Логотип SquareShare">
+            </a>
+            <button class="main-nav__menu" id="hamburger-menu">
+              <span class="visually-hidden">Меню</span>
+            </button>
+          </div>
+          <div class="main-nav__navigation">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#vision">Видение</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#products">Продукты</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#partners">Партнеры</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#timeline">Развитие</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#team">Команда</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#contacts">Контакты</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="">Популярные вопросы</a></li>
+            </ul>
+            <ul class="main-nav__lang-list">
+              <li class="main-nav-lang main-nav-lang--active"><a class="main-nav__link">Ru</a></li>
+              <li class="main-nav-lang"><a class="main-nav__link" href="#">En</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="hero">
+        <div class="hero__informarion" id="startchange">
+          <h1 class="hero__title">SquareShare</h1>
+          <p class="hero__description">Блокчейн платформа по торговле недвижимостью</p>
+        </div>
+        <div class="hero__subscribe">
+          <form class="hero__form" action="php/mail.php" method="POST">
+            <label class="visually-hidden" for="user-mail">Введите ваш емэил, чтобы подписаться на рaccылку</label>
+            <input type="email" id="user-mail" name="user-mail" class="hero__mail" placeholder="Ваш e-mail" required>
+            <button type="submit" class="hero__send-button button" name="sendMail">Подписаться нa рассылку</button>
+          </form>
+          <p class="hero__telegram"><a class="hero__t-link" href="#">Подпишитесь на нас в Telegram</a></p>
+        </div>
+      </section>
+      <section class="about-us page-main__section page-main__section--even">
+        <div class="page-main__anchor" id="vision"></div>
+        <div class="container">
+          <h2 class="about-us__title page-main__title page-main__title--even">Наше видение</h2>
+          <p class="about-us__description">Модернизация механизма приобретения жилья используя страховое обеспечение и предоставляя возможность приобретения жилья широким слоям населения и мелким инвесторами минуя механизмы ипотечного кредитования и единовременного приобретения</p>
+        </div>
+      </section>
+      <section class="products page-main__section page-main__section--odd">
+        <div class="page-main__anchor" id="products"></div>
+        <div class="container">
+          <h2 class="products__title page-main__title page-main__title--even">Наши продукты</h2>
+          <ul class="products__list">
+            <li class="products__item">
+              <button class="products__button button" type="button">SQS Токен</button>
+            </li>
+            <li class="products__item">
+              <button class="products__button button" type="button">Проектный Токен</button>
+            </li>
+            <li class="products__item">
+              <button class="products__button button" type="button">Программы для Риелторов</button>
+            </li>
+            <li class="products__item">
+              <button class="products__button button" type="button">Реферальные Программы</button>
+            </li>
+            <li class="products__item">
+              <button class="products__button button" type="button">Страховое Обеспечение</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="partners page-main__section page-main__section--even">
+        <div class="page-main__anchor" id="partners"></div>
+        <div class="container">
+          <h2 class="partners__title page-main__title page-main__title--even">Наши партнеры</h2>
+          <ul class="partners__list">
+            <li class="partners__item">
+              <button class="partners__button button" type="button">Застройщики</button>
+            </li>
+            <li class="partners__item">
+              <button class="partners__button button" type="button">Риелторы</button>
+            </li>
+            <li class="partners__item">
+              <button class="partners__button button" type="button">Сетевые Маркетологи</button>
+            </li>
+            <li class="partners__item">
+              <button class="partners__button button" type="button">Страховые Компании</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="timeline page-main__section page-main__section--odd">
+        <div class="page-main__anchor" id="timeline"></div>
+        <div class="container">
+          <h2 class="timeline__title page-main__title page-main__title--odd">Развитие</h2>
+          <div class="timeline__chron">
+            <h3 class="timeline__subtitle">График развития</h3>
+            <ul class="timeline__list">
+              <li class="timeline__item timeline__item--active timeline__item--proj-dev">Прототип и Команда</li>
+              <li class="timeline__item timeline__item--proj-dev">Пилотный Проект</li>
+              <li class="timeline__item timeline__item--proj-dev">Бета<br> Версия</li>
+              <li class="timeline__item timeline__item--proj-dev">Альфа<br> Версия</li>
+              <li class="timeline__item timeline__item--proj-dev">Полноценная Платформа</li>
+            </ul>
+          </div>
+          <div class="timeline__chron">
+            <h3 class="timeline__subtitle">График финансирования</h3>
+            <ul class="timeline__list">
+              <li class="timeline__item timeline__item--active timeline__item--invest">Стартовый Капитал</li>
+              <li class="timeline__item timeline__item--invest">Венчурное Финансирование</li>
+              <li class="timeline__item timeline__item--invest">SQS Предпродажа</li>
+              <li class="timeline__item timeline__item--invest">Основной<br> ICO</li>
+              <li class="timeline__item timeline__item--invest">Реализация Фонда Выкупа</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="team page-main__section page-main__section--even">
+        <div class="page-main__anchor" id="team"></div>
+        <div class="container">
+          <h2 class="team__title page-main__title page-main__title--odd">Команда</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <button class="team__photo">
+               <img class="team__img" src="http://placehold.it/150x100" width="150" height="100" alt="Александр Гусев">
+            </button>
+              <p class="team__name">Александр Гусев</p>
+              <p class="team__position">Основатель и генеральный директор</p>
+            </li>
+            <li class="team__item">
+              <button class="team__photo">
+               <img class="team__img" src="http://placehold.it/150x100" width="150" height="100" alt="Леонард Нолл">
+            </button>
+              <p class="team__name">Леонард Нолл</p>
+              <p class="team__position">Заместитель директора и главный юрисконсульт</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="questions-form page-main__section">
+        <div class="page-main__anchor" id="contacts"></div>
+        <div class="container container--form">
+          <h2 class="visually-hidden">Форма для ваших вопросов</h2>
+          <p class="questions-form__title">Остались вопросы? Свяжитесь с нами</p>
+          <a class="questions-form__mail-link">mail@mail.com</a>
+          <form class="form-ask" method="post">
+            <ul class="form-ask__list">
+              <li class="form-ask__item">
+                <label class="form-ask__label" for="name">Имя:</label>
+                <input type="text" id="name" class="form-ask__input" placeholder="Ваше имя" required>
+              </li>
+              <li class="form-ask__item">
+                <label class="form-ask__label" for="phone">Телефон:</label>
+                <input type="tel" id="phone" class="form-ask__input" placeholder="Телефон">
+              </li>
+              <li class="form-ask__item">
+                <label class="form-ask__label" for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-ask__input" placeholder="Ваш email" required>
+              </li>
+              <li class="form-ask__item">
+                <label class="form-ask__label" for="comment">Сообщение:</label>
+                <textarea id="comment" class="form-ask__input form-ask__input--comment" placeholder="Текст сообщения"></textarea>
+              </li>
+            </ul>
+            <button type="submit" class="form-ask__button button">Отправить</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container container--footer">
+        <form class="page-footer__form" method="post">
+          <label class="page-footer__label" for="footer-email">Подпишитесь на рассылку</label>
+          <div class="page-footer__send">
+            <input class="page-footer__input" id="footer-email" name="footer-email" type="email" placeholder="Ваш email" required>
+            <button type="submit" class="page-footer__button button">
+              <span class="visually-hidden">Отправить</span>
+            </button>
+          </div>
+        </form>
+        <div class="page-footer__social social">
+          <p class="social__title">Мы в соц. сетях</p>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="28" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+                  <g>
+                    <path d="M5.299,144.645l69.126,25.8l26.756,86.047c1.712,5.511,8.451,7.548,12.924,3.891l38.532-31.412
+                		c4.039-3.291,9.792-3.455,14.013-0.391l69.498,50.457c4.785,3.478,11.564,0.856,12.764-4.926L299.823,29.22
+                		c1.31-6.316-4.896-11.585-10.91-9.259L5.218,129.402C-1.783,132.102-1.722,142.014,5.299,144.645z M96.869,156.711l135.098-83.207
+                		c2.428-1.491,4.926,1.792,2.841,3.726L123.313,180.87c-3.919,3.648-6.447,8.53-7.163,13.829l-3.798,28.146
+                		c-0.503,3.758-5.782,4.131-6.819,0.494l-14.607-51.325C89.253,166.16,91.691,159.907,96.869,156.711z"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                	<g>
+                		<path d="M448,0H64C28.704,0,0,28.704,0,64v384c0,35.296,28.704,64,64,64h192V336h-64v-80h64v-64c0-53.024,42.976-96,96-96h64v80
+                			h-32c-17.664,0-32-1.664-32,16v64h80l-32,80h-48v176h96c35.296,0,64-28.704,64-64V64C512,28.704,483.296,0,448,0z"/>
+                	</g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
