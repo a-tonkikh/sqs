@@ -1,1 +1,1 @@
-# sqs
+сборка npm run build
