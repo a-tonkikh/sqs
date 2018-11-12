@@ -4,11 +4,9 @@
 *.ai
 *.log
 *.pdf
-*.psd
+*.pds
 *.mp4
 *.webm
-*.sublime*
-build/
 node_modules/
 npm-debug.*
-Thumbs.db
+Thumb.db

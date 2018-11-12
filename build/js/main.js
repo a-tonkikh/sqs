@@ -2,8 +2,6 @@ var menu = document.getElementById("menu");
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__menu');
 
-// navMain.classList.remove('main-nav--nojs');
-
 window.onscroll = function() {
   scrollFunction()
 };
